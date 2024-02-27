@@ -397,6 +397,7 @@ img {
 .social-media-links-list {
   display: flex;
   gap: 16px;
+  margin-right: 80px;
 }
 .social-media-links-list-item {
   width: 40px;
@@ -423,4 +424,59 @@ img {
   fill: #f4f4fd;
 }
 
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+}
+.subscription-input-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-form-wrapper {
+  display: flex;
+  gap: 24px;
+}
+.subscription-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.subscription-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.subscription-input:placeholder-shown {
+  background-color: #2e2f42;
+  padding-left: 16px;
+}
+.subscribe-btn {
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  display: flex;
+}
+.subscribe-btn-text {
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+.subscribe-icon {
+  fill: #ffffff;
+}
 /* #endregion */
