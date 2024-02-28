@@ -366,6 +366,8 @@ img {
 .footer {
   background: #2e2f42;
   padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .footer-container {
   display: flex;
@@ -486,3 +488,171 @@ img {
   fill: #ffffff;
 }
 /* #endregion */
+
+/* #region modal */
+.backdrop {
+  background-color: rgba(46, 47, 66, 0.4);
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+.modal-container {
+  border-radius: 4px;
+  width: 408px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  padding: 24px;
+}
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+/* close btn */
+.close-button {
+  position: relative;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: #fcfcfc;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+.ellipse-icon {
+  fill: #e7e9fc;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.cross-icon {
+  fill: #2e2f42;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover .ellipse-icon,
+.close-button:focus .ellipse-icon {
+  fill: #404bbf;
+  stroke: none;
+}
+.close-button:hover .cross-icon,
+.close-button:focus .cross-icon {
+  fill: #ffffff;
+}
+/* form */
+.modal-subscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* label */
+.modal-form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-label:focus-within,
+.modal-form-label:hover,
+.modal-form-label:focus {
+  color: #4d5ae5;
+}
+/* input */
+.modal-form-input {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input:hover,
+.modal-form-input:focus {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+/* textarea */
+.modal-textarea-comment {
+  margin-top: 4px;
+  padding: 8px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-textarea-comment:hover,
+.modal-textarea-comment:focus {
+  border: 1px solid #4d5ae5;
+  outline: none;
+}
+.modal-textarea-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+/* checkbox */
+.modal-checkbox-wrapper {
+  display: flex;
+}
+.modal-checkbox-input {
+  margin-right: 8px;
+}
+.modal-checkbox-input:checked {
+  accent-color: #404bbf;
+}
+.modal-checkbox-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.modal-checkbox-link {
+  line-height: 1.33;
+  text-decoration: underline;
+  color: #4d5ae5;
+}
+
+/* subscribe btn */
+.modal-form-subscription-btn {
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-subscription-btn:hover,
+.modal-form-subscription-btn:focus {
+  background-color: #404bbf;
+}
+
+/* #endregion */
+/* ###########################add icons, checkbox styles */
