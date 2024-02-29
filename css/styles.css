@@ -540,6 +540,7 @@ img {
 .close-button:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 .cross-icon {
   fill: #2e2f42;
