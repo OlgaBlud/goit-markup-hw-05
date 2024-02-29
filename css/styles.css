@@ -451,6 +451,11 @@ img {
   border-radius: 4px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 .subscription-input::placeholder {
   font-weight: 400;
@@ -459,10 +464,7 @@ img {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
-.subscription-input:placeholder-shown {
-  background-color: #2e2f42;
-  padding-left: 16px;
-}
+
 .subscribe-btn {
   background-color: #4d5ae5;
   border-radius: 4px;
