@@ -36,30 +36,30 @@
         <form class="modal-subscription-form" name="modal-subscription-form">
           <label class="modal-form-label"
             >Name
-            <div class="modal-input-wrap">
+            <span class="modal-input-wrap">
               <input class="modal-form-input" type="text" name="user-name" />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-label"
             >Phone
-            <div class="modal-input-wrap">
+            <span class="modal-input-wrap">
               <input class="modal-form-input" type="tel" name="user-phone" />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-label"
             >Email
-            <div class="modal-input-wrap">
+            <span class="modal-input-wrap">
               <input class="modal-form-input" type="email" name="user-email" />
               <svg class="modal-input-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-label"
             >Comment
@@ -79,11 +79,11 @@
                 type="checkbox"
                 name="privacy-policy"
               />
-              <div class="modal-checkbox-icon-wrapper">
+              <span class="modal-checkbox-icon-wrapper">
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg>
-              </div>
+              </span>
             </label>
 
             <p class="modal-checkbox-text">
@@ -547,10 +547,13 @@
           </ul>
         </div>
         <form class="subscription-form" name="subscription">
-          <label class="subscription-input-label" for="email">Subscribe</label>
+          <label class="subscription-input-label" for="subscription-input-email"
+            >Subscribe</label
+          >
           <div class="footer-form-wrapper">
             <input
               class="subscription-input"
+              id="subscription-input-email"
               type="email"
               name="email"
               placeholder="E-mail"
