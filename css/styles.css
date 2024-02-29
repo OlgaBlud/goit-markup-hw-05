@@ -374,6 +374,8 @@ img {
   display: flex;
   align-items: baseline;
 }
+
+/* logo+text */
 .footer-text-wrap {
   margin-right: 120px;
 }
@@ -388,7 +390,7 @@ img {
   color: #f4f4fd;
   width: 264px;
 }
-
+/* social media */
 .social-media-footer-text {
   font-weight: 500;
   font-size: 16px;
@@ -410,7 +412,6 @@ img {
 .social-media-link {
   width: 100%;
   height: 100%;
-
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
@@ -426,28 +427,29 @@ img {
 .social-media-icon {
   fill: #f4f4fd;
 }
+/* form */
+/* .footer-subscription-wrap {
+} */
 
-.subscription-form {
-  display: flex;
-  flex-direction: column;
-}
-.subscription-input-label {
+.footer-subscription-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 16px;
 }
-.footer-form-wrapper {
+.subscription-form {
   display: flex;
   gap: 24px;
 }
+
 .subscription-input {
-  border: 1px solid #fff;
-  border-radius: 4px;
   width: 264px;
   height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .subscription-input::placeholder {
@@ -455,37 +457,37 @@ img {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 .subscription-input:placeholder-shown {
   background-color: #2e2f42;
   padding-left: 16px;
 }
 .subscribe-btn {
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
   border: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: #404bbf;
 }
-.subscribe-btn-text {
-  margin-right: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
-}
+
 .subscribe-icon {
+  margin-left: 16px;
   fill: #ffffff;
 }
 /* #endregion */

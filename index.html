@@ -546,27 +546,26 @@
             </li>
           </ul>
         </div>
-        <form class="subscription-form" name="subscription">
-          <label class="subscription-input-label" for="subscription-input-email"
-            >Subscribe</label
-          >
-          <div class="footer-form-wrapper">
-            <input
-              class="subscription-input"
-              id="subscription-input-email"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              value=""
-            />
+        <div class="footer-subscription-wrap">
+          <p class="footer-subscription-text">Subscribe</p>
+          <form class="subscription-form" name="subscription">
+            <label class="subscription-input-label">
+              <input
+                class="subscription-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="subscribe-btn" type="submit">
-              <span class="subscribe-btn-text">Subscribe</span>
+              Subscribe
+              <!-- <span class="subscribe-btn-text">Subscribe</span> -->
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-paper-airplane"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
